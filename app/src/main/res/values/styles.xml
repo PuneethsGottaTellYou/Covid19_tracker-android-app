@@ -1,0 +1,36 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">#0CC559</item>
+        <item name="colorPrimaryDark">#00C853</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:queryHint">#636161</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="editTextColor">@android:color/darker_gray</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+        <!-- Text Size -->
+        <item name="android:textSize">20sp</item>
+        <!-- Query Text Color -->
+        <item name="android:textColorPrimary">#090909</item>
+        <!-- Hint Color -->
+        <item name="android:textColorHint">@color/hint_color</item>
+        <!-- Icon Color -->
+        <item name="android:tint">@color/hint_color</item>
+    </style>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    />
+    <ProgressBar
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="#08D571"
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:text="Please Wait..."
+        android:textStyle="bold"
+        android:textColor="@color/maps_floorpicker_black"
+        android:visibility="invisible"
+        />
+
+<androidx.appcompat.widget.SearchView
+    android:theme="@style/AppSearchView"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:padding="10dp"
+    android:elevation="10dp"
+    android:backgroundTint="#fff"
+    android:background="@drawable/searchbar_shadow"
+    app:queryHint="Search"
+    app:iconifiedByDefault="false"
+    android:id="@+id/searchBar"
+    android:gravity="center_vertical"
+    android:clipToPadding="false"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/curved_button"
+        android:textColor="#fff"
+        android:text="State wise data"
+        android:textSize="20sp"
+        android:onClick="stateWiseDataButton"
+        />
+
+
+
+
+</RelativeLayout>

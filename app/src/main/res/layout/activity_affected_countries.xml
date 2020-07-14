@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".AffectedCountries">
+    
+    <EditText
+        android:id="@+id/searchCountriesBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:hint="Search countries here..."
+        android:textColor="#504F4F"
+        android:textColorHint="@color/hint_color"
+        android:drawablePadding="10dp"
+        android:background="@drawable/searchbar_shadow"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+
+        />
+
+    <ListView
+        android:id="@+id/searchCountriesListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchCountriesBar"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        />
+    
+    <ProgressBar
+        android:id="@+id/trackCountriesProgressBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateTint="#08D571"
+        android:visibility="visible"
+        />
+    <TextView
+        android:id="@+id/trackCountriesProgressBarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackCountriesProgressBar"
+        android:layout_centerHorizontal="true"
+        android:text="Loading data..."
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:textColor="@color/hint_color"
+        />
+
+
+
+
+
+</RelativeLayout>
