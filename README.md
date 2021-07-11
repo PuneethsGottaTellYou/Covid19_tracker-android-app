@@ -14,5 +14,3 @@ An android app that provides information on latest covid-19 world data, includes
 
 Most part of the app is developed my me, some referenced from different sources
 
-References : Youtube (ARSL tech channel)
-  
